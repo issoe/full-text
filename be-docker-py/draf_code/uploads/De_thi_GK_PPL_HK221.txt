@@ -1,0 +1,76 @@
+Lecturer:
+(Date)
+Approved by:
+(Date)
+(Signature and Fullname)
+(Signature and Fullname)
+UNIVERSITY OF TECHNOLOGY - VNUHCM
+FACULTY OF CSE
+MIDTERM
+Semester / Academic year
+1
+2022-2023
+Date
+Oct. 23 2022
+Course title
+Principles of Programming Languages
+Course ID
+CO3005
+Duration
+60 mins
+Question sheet code
+2022
+Notes: - Students can only use course and API materials.
+- Submit the question sheet together with the answer sheet
+- The total score is 10 points.
+1. Construct regular expressions expressing languages over {a, b, c}, in which for every string w it holds that
+a. Strings made by a’s only (can be empty)
+b. Any strings made by {a, b, c}
+c. The number of a’s in w is even
+d. There are (4i + 1) b’s in w (i >= 0)
+2. Develop a CFG to represent a single declaration in C++.
+The type can be int and xed array (i.e number of element is an integer constant) of int t. The non-array variables
+can be with/without default values.
+Example: int a, b = 2, c[4];
+Assume that the following tokens have been dened by the lexer.
+No
+Token
+Description
+1
+Semi
+;
+2
+Int
+int
+3
+Integer
+2, 3, -7
+4
+OpenCol
+[
+5
+CloseCol
+]
+6
+Id
+identiier
+7
+Comma
+,
+22
+Assignment
+=
+3. Given a context-free grammar as follows.
+E → E + T|E–T|E/F|T
+T → T ∗ F|F
+F → (E)|Int
+a. Draw the parse tree for the following expression.
+2 + 3 ∗ 5 − 4
+2 + (3 ∗ 5 − 4)
+b. Compare the precedence between * and – operators. Prove your answer.
+c. What are the association of 4 operators? Prove your answers.
+4. Show that the following grammars is ambigous
+S → AB|aaB
+A → a|aA
+B → b
+Stu.: .......................................... Stu. Fullname: . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Page: 1

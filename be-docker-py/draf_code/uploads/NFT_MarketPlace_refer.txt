@@ -1,0 +1,630 @@
+IJARSCT 
+ 
+ISSN (Online) 2581-9429 
+ 
+ 
+ 
+ 
+ 
+         International Journal of Advanced Research in Science, Communication and Technology (IJARSCT) 
+ 
+ Volume 2, Issue 3, May 2022 
+ 
+Copyright to IJARSCT 
+ 
+ 
+ 
+DOI: 10.48175/IJARSCT-3729 
+ 
+ 
+  
+   179 
+www.ijarsct.co.in  
+Impact Factor: 6.252 
+NFT Marketplace Based on Ethereum Blockchain 
+Yogiraj Gutte1, Aasit Vora2, Yogesh Sharma3, Bhaskar Bhardwaj4 
+Students, Department of Computer Engineering1,2,3,4 
+Sinhgad College of Engineering, Pune, Maharashtra, India  
+ 
+Abstract: Non-fungible tokens (NFTs) are transferrable rights to digital assets, such as images, videos, or 
+music. The phenomenon and its markets have grown significantly since early 2021. The number of NFT 
+marketplaces has been rising continuously since a couple of years. Majority of them employ centralized 
+systems for storage of digital assets (files). This is contradictory to the notion of decentralized systems. In this 
+project we propose a secure platform for trading digital assets in the form of Non-Fungible tokens. It will 
+enable the users to create new digital assets and trade them in exchange of Ethereum-based cryptocurrency. 
+Along with this, we aim to explore technical feasibility of a decentralized file system (using IPFS protocol) 
+for storing the digital assets in a more secured way. In this way, we attempt to address the issue of file storage. 
+Also, this project is an attempt to advocate the use of block chain technology. 
+ 
+Keywords: NFT, Blockchain, Ethereum, IPFS, Decentralized Networks 
+ 
+I. INTRODUCTION 
+   Technology advancement and digitization were not always regarded as partners in the evolution of the arts industry. This 
+viewpoint and mindset are about to shift. With their involvement in various Non-Fungible Token projects, content creators, 
+artists, and personalities from a variety of industries have dominated the headlines. This turning away from traditional 
+business models has been accomplished by recognizing the powerful tools and innovative features provided by blockchain 
+technology. The usability of such technology has been directly proportional to the curve of discovery of novel business 
+concepts involving tokens and tokenization processes. 
+ 
+II. LITERATURE SURVEY 
+# 
+Paper Details 
+Paper Name 
+Author 
+Year of 
+Publication 
+Publica
+tion 
+Seed Idea 
+1 
+On Blockchain Technology: 
+Overview of Bitcoin and 
+Future Insights [1]  
+Hellani, 
+et.al 
+2019 
+IEEE 
+Understanding blockchain tech, 
+how web3 works, competency of 
+blockchain applications. 
+2 
+Decentralized Applications: 
+The Blockchain-Empowered 
+Software System [2] 
+Wei Cai, 
+et.al 
+2018 
+IEEE 
+Understanding 
+Ethereum 
+Blockchain, 
+smart 
+contracts, 
+various Ethereum tokens and 
+exploring dApps. 
+3 
+Building 
+A 
+Decentralized 
+Application on the Ethereum 
+Blockchain [3]  
+R. Taş and 
+Ö. 
+Ö. 
+Tanrıöver 
+2019 
+IEEE 
+Understanding the tech stack and 
+overall process involved to build 
+dApps,  
+4 
+Non-Fungible Token (NFT): 
+Overview, 
+Evaluation, 
+Opportunities and Challenges 
+[4] 
+Qin 
+Wang, 
+et.al 
+2021 
+arXiv 
+Understanding concept behind 
+NFTs, their recent spike in trends, 
+what makes them special, and 
+exploring 
+concept 
+of 
+digital 
+ownership 
+Table 1: Literature Survey 
+ 
+ 
+IJARSCT 
+ 
+ISSN (Online) 2581-9429 
+ 
+ 
+ 
+ 
+ 
+         International Journal of Advanced Research in Science, Communication and Technology (IJARSCT) 
+ 
+ Volume 2, Issue 3, May 2022 
+ 
+Copyright to IJARSCT 
+ 
+ 
+ 
+DOI: 10.48175/IJARSCT-3729 
+ 
+ 
+  
+   180 
+www.ijarsct.co.in  
+Impact Factor: 6.252 
+III. BACKGROUND AND BASICS 
+    A Non-Fungible Token is essentially a digital certificate of authenticity that cannot be copied. NFTs are used to represent 
+ownership of unique items and are stored on a blockchain or distributed ledger. Because of the secure properties of 
+blockchain technology, the record of ownership is always available, immutable, and guarantees that only one owner can 
+exist at any given time. 
+    NFTs, which are based on the blockchain programmable infrastructure, can represent anything that is both physical and 
+digital in a digital realm. It is critical to recognise that the metadata stored within the Token's smart contract ensures 
+uniqueness and, together with the transparency of the transaction history provided by the underlying technology, allows the 
+NFT to be verifiable by any network participant, reducing the risk of counterfeiting to zero. 
+ 
+IV. IMPLEMENTATION DETAILS OF MODULE 
+4.1 System Use-Case Overview 
+This Use-Case diagram represents the functional requirements of the system. It covers following functional requirements: 
+ 
+Browse Marketplace 
+ 
+View Item 
+ 
+Buy NFT Asset 
+ 
+Place Bid in Auction 
+ 
+Sell NFT Asset 
+ 
+Start Auction 
+ 
+Mint NFT 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Figure 1: System UML Diagram 
+ 
+ 
+IJARSCT 
+ 
+ISSN (Online) 2581-9429 
+ 
+ 
+ 
+ 
+ 
+         International Journal of Advanced Research in Science, Communication and Technology (IJARSCT) 
+ 
+ Volume 2, Issue 3, May 2022 
+ 
+Copyright to IJARSCT 
+ 
+ 
+ 
+DOI: 10.48175/IJARSCT-3729 
+ 
+ 
+  
+   181 
+www.ijarsct.co.in  
+Impact Factor: 6.252 
+4.2 System Backend Overview 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Figure 2: Software Backend Class Diagram 
+Above Class Diagram represents all the basic classes present in backend. Below are some insights about the classes: 
+ 
+Admin and User classes inherit from Account abstract class. 
+ 
+Collection Item and Listed Item classes inherit from Item abstract class. 
+ 
+There is a composition relationship between User class and Item class. 
+ 
+There is a composition relationship between Item class and Transaction class. 
+ 
+There is a composition relationship between Auction class and Listed Item class. 
+ 
+There is an association relationship between Tag class and Item class. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+IJARSCT 
+ 
+ISSN (Online) 2581-9429 
+ 
+ 
+ 
+ 
+ 
+         International Journal of Advanced Research in Science, Communication and Technology (IJARSCT) 
+ 
+ Volume 2, Issue 3, May 2022 
+ 
+Copyright to IJARSCT 
+ 
+ 
+ 
+DOI: 10.48175/IJARSCT-3729 
+ 
+ 
+  
+   182 
+www.ijarsct.co.in  
+Impact Factor: 6.252 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Figure 3: Smart Contract Class Diagram 
+Above Class Diagram represents the structure of Smart Contracts. Below are some insights about this diagram. 
+ 
+Interfaces: IERC721 
+ 
+Abstract Classes: ERC721Tradable 
+ 
+Concrete Classes: NFT Minting, NFT Trading, NFT Auction 
+ 
+4.3 Architecture Overview 
+ 
+React Client: This is a webapp built with ReactJS. It is primary interface between the user and the backend. It 
+provides an easy-to-use graphical interface allowing the user to use all features of the software with ease. It 
+communicates with the backend server using REST APIs. It also lets the user to access the wallet using Web3 
+libraries and JSON-RPC. 
+IJARSCT 
+ 
+ISSN (Online) 2581-9429 
+ 
+ 
+ 
+ 
+ 
+         International Journal of Advanced Research in Science, Communication and Technology (IJARSCT) 
+ 
+ Volume 2, Issue 3, May 2022 
+ 
+Copyright to IJARSCT 
+ 
+ 
+ 
+DOI: 10.48175/IJARSCT-3729 
+ 
+ 
+  
+   183 
+www.ijarsct.co.in  
+Impact Factor: 6.252 
+ 
+Metamask Wallet: This is a popular wallet that is used to store cryptocurrency. The client-side webapp 
+communicates with this wallet using Web3 protocol. It lets the user approve payments. 
+ 
+Nodejs Backend: This server contains all the business logic of NFTBazaar. It communicates with the client through 
+REST APIs, with the distributed file system using IPFS protocol and with the Ethereum Blockchain using the smart 
+contracts. It also has a SQL database.  
+ 
+Distributed File System: This is a peer-to-peer network of devices which stores files. The files uploaded by the 
+users for tokenization will be stored on this network. The backend can access this network using the IPFS protocol. 
+ 
+Ethereum Blockchain: It will store the URIs of NFTs. It also stores the smart contract and all the transactions 
+performed by users. 
+ 
+Smart Contract: It is a piece of code with some business logic that is deployed on the blockchain. It performs all 
+transactions on the blockchain – transfer currency, create NFT, etc. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Figure 4: Architectural Diagram 
+4.4 Data Flow of Preliminary Model 
+     Above Data Flow Diagram represents the flow of data during the procedure of buying NFT assets. Following are some 
+insights about it: 
+ 
+The User requests to view the Marketplace Catalogue. 
+ 
+User may filter or sort the results according to their liking. 
+ 
+The User chooses an item of interest and requests to view it. 
+ 
+On the Item View page, the user may request to buy the item. 
+ 
+Payment is approved by the User Wallet. 
+ 
+Amount gets deducted from the User Wallet and gets added to Seller Wallet. 
+ 
+The NFT token gets transferred to User Wallet. 
+ 
+All transactions get added to Transaction Database. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+IJARSCT 
+ 
+ISSN (Online) 2581-9429 
+ 
+ 
+ 
+ 
+ 
+         International Journal of Advanced Research in Science, Communication and Technology (IJARSCT) 
+ 
+ Volume 2, Issue 3, May 2022 
+ 
+Copyright to IJARSCT 
+ 
+ 
+ 
+DOI: 10.48175/IJARSCT-3729 
+ 
+ 
+  
+   184 
+www.ijarsct.co.in  
+Impact Factor: 6.252 
+Figure 5: Data Flow Diagram 
+4.5 Business Rules 
+ 
+Conduct Code: Most NFTs, given the predominance of user-generated content and transactions in NFT 
+marketplaces, include an extra layer of legal restrictions in the form of codes of conduct to govern interactions on 
+the platform. 
+ 
+Smart Contracts: The unique digital creation must be independently identifiable, with ownership transferable 
+within the smart contract. Creators should design-in the economics of trading:  How much for a primary sale, how 
+much for secondary sales, royalties, transaction costs and other features of the aftermarket to enable trading, with 
+funds flowing to the appropriate parties by design. 
+ 
+Platform Terms of Service: NFT marketplaces must have essential documents such as Terms of Service, which 
+govern the relationship between the NFT marketplace operator and customers, and between the buyers and sellers 
+of the NFTs featured on the platform. A well-thought-out terms of service agreement can help protect the 
+organization from various legal issues and generally have provisions limiting the company’s overall liability. 
+ 
+Terms of Sale: Sellers or creators listing their NFTs on an NFT marketplace may wish to impose additional terms 
+of sale on purchasers of their NFT, especially if the platform’s terms of service do not sufficiently address risks to 
+the seller or creator. 
+ 
+Intellectual Property Protection: It is vital to verify each participant’s intellectual property rights through each step 
+of every NFT transaction. Be sure to allocate intellectual property rights between the creators/artists, 
+IJARSCT 
+ 
+ISSN (Online) 2581-9429 
+ 
+ 
+ 
+ 
+ 
+         International Journal of Advanced Research in Science, Communication and Technology (IJARSCT) 
+ 
+ Volume 2, Issue 3, May 2022 
+ 
+Copyright to IJARSCT 
+ 
+ 
+ 
+DOI: 10.48175/IJARSCT-3729 
+ 
+ 
+  
+   185 
+www.ijarsct.co.in  
+Impact Factor: 6.252 
+purchasers/collectors, and other parties involved. The ownership of the original work is copyright ownership, which 
+vests in the creator of the original work. If an NFT is minted and sold, the purchaser will receive a set of intellectual 
+property rights from the creator as part of owning the NFT. The seller of the NFT determines the rights that 
+accompany an NFT. 
+ 
+Payments: If payments are processed on behalf of counter parties, the party touching the money may be a “money 
+transmitter” with its activities governed by applicable Treasury, state and local registration regulations.  To avoid 
+the complex process of registration in innumerable jurisdictions, many marketplaces partner with already-
+registered entities, acting as content creators rather than payment processors.  
+ 
+Data Privacy: Being transparent about the data collection and use is critical. Many jurisdictions require platforms 
+to disclose their data practices in a privacy policy. The fines for privacy violations can be significant. 
+ 
+4.6 Project Process Modelling 
+    Agile project management is an iterative approach to delivering a project throughout its life cycle. Iterative or agile life 
+cycles are composed of several iterations or incremental steps towards the completion of a project. Iterative approaches are 
+frequently used in software development projects to promote velocity and adaptability since the benefit of iteration is that 
+you can adjust as you go along rather than following a linear path. One of the aims of an agile or iterative approach is to 
+release benefits throughout the process rather than only at the end. At the core, agile projects should exhibit central values 
+and behaviours of trust, flexibility, empowerment and collaboration 
+ 
+V. LIMITATIONS AND EXCLUSIONS 
+    As of the time of writing this, cryptocurrency is not a legal tender in many countries [5]. Users need to be aware of all the 
+risks [6] involved while investing in assets. The authors are not responsible at any given time if any anomalies with the 
+finances that might happen if proper attention is not paid.  
+    Users need to load up digital currency onto their existing wallet from 3rd party exchanges like Binance, WazirX, FTX, 
+etcetera. The project is a technical demonstration on how ERC-721 tokens can be traded for digital currency in a modern 
+age web-based application. 
+ 
+VI. SAFETY REQUIREMENTS 
+    The blockchain provides the protection and transferability enabled by distributed ledger technology. Representing 
+anything from tweets to real estate - NFTs are ultimately digital collectibles. NFT's are different from other blockchain-
+based assets like Bitcoin, Ether, and stable coins that are identical, interchangeable, and ultimately fungible. This is because 
+NFT's represent non-fungible, divisible, and transferable pieces of ownership in distinct assets. 
+ 
+Avoiding Duplicity: To prevent fraudulent users from uploading same file in the marketplace, a database keeps 
+track of all data that goes into the inventory and prompts user an error if duplicity is found. 
+ 
+Transaction atomicity: The atomicity of transaction should be maintained so that the users don’t lose their currency 
+or assets in the event of transaction failure. 
+ 
+Returning Auction Funds: Users that participate in auctions need to keep the cryptocurrency staked at said price 
+on hold until the auction ends. Once this ends, the winner of the auction is compensated with the NFT to his/her 
+wallet. And rest of the funds that were put on hold shall be released to where it came from. 
+ 
+Data Redundancy: Databases should use sharding to be redundant to prevent loss of data. Backups of the databases 
+should be done hourly and be kept for one week. 
+ 
+VII. CONCLUSION 
+    Non-Fungible Token (NFT) is a new technology that is gaining traction in the blockchain market. In this report, we look 
+at cutting-edge NFT solutions that could reshape the digital/virtual asset market in the future. We begin by analysing the 
+technical components and then provide design models and properties. Then, we assess the security of current NFTs systems 
+and go over the opportunities and potential applications that use the NFT concept. Finally, we outline current research 
+challenges that must be addressed before reaching mass-market penetration. We hope that this report provides timely 
+analysis and summaries of existing proposed solutions and projects, making it easier for newcomers to stay current.   
+IJARSCT 
+ 
+ISSN (Online) 2581-9429 
+ 
+ 
+ 
+ 
+ 
+         International Journal of Advanced Research in Science, Communication and Technology (IJARSCT) 
+ 
+ Volume 2, Issue 3, May 2022 
+ 
+Copyright to IJARSCT 
+ 
+ 
+ 
+DOI: 10.48175/IJARSCT-3729 
+ 
+ 
+  
+   186 
+www.ijarsct.co.in  
+Impact Factor: 6.252 
+ACKNOWLEDGMENT 
+    We have taken efforts in this project. However, it would not have been possible without the kind support and help of 
+many individuals and organizations. We would like to extend our sincere thanks to all of them. We are highly indebted to 
+Prof Nalini Mhetre for her guidance and constant supervision as well as for providing necessary information regarding the 
+project & also for her support in completing the project. We would like to express our gratitude towards Prof M. P. 
+Wankhede, H.O.D. of Computer Engineering, SCOE and Dr. S. D. Lokhende, Principal, SCOE for their kind co-operation 
+and encouragement which helped us in completion of this project. 
+    We would like to express our special gratitude and thanks to all our colleagues for giving us such attention and time. Our 
+thanks and appreciations also go to our friends in developing the project and people who have willingly helped us out with 
+their abilities. 
+ 
+REFERENCES 
+[1]. H. Hellani, A. E. Samhat, M. Chamoun, H. E. Ghor and A. Serhrouchni, "On BlockChain Technology: Overview 
+of Bitcoin and Future Insights," IEEE, no. 2018 IEEE International Multidisciplinary Conference on Engineering 
+Technology (IMCET), 2018.  
+[2]. W. Cai, Z. Wang, J. B. Ernst, Z. Hong, C. Feng and V. C. M. Leung, "Decentralized Applications: The Blockchain-
+Empowered Software System," IEEE Access, Vols. 53019 - 53033, no. 6, 2018.  
+[3]. R. Taş and Ö. Ö. Tanrıöver, "Building A Decentralized Application on the Ethereum Blockchain," in 3rd 
+International Symposium on Multidisciplinary Studies and Innovative Technologies (ISMSIT), Ankara, Turkey, 
+2019.  
+[4]. Q. &. L. R. &. W. Q. &. C. S. Wang, "Non-Fungible Token (NFT): Overview, Evaluation, Opportunities and 
+Challenges," arXiv:2105.07447, 2021. 
+[5]. "Coin Market Cap," [Online]. Available: https://coinmarketcap.com/legal-tender-countries/. 
+[6]. "Business Insider," [Online]. Available: https://www.businessinsider.in/tech/news/nfts-could-be-the-future-of-
+collecting-or-a-huge-bubble-we-talked-to-3-experts-about-the-risks-to-consider-before-buying-in-
+/articleshow/81485561.cms. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

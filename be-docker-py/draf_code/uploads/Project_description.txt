@@ -1,0 +1,51 @@
+Software Testing – 2023S1 
+Project 
+1 
+Project description 
+Part#1: Sotware Technical Review 
+ 
+ 
+I. Description 
+Review the given pieces of code (in Java) using the provided Java Code Review Checklist. 
+(It is a short version modified from the original one of TMA Solution company. The short version 
+is made without any agreement from TMA and for teaching purpose only. Sorry about that!) 
+ 
+Use the template “Code Review Report Sample.xlsx” to report all faults/errors/mistakes you 
+may find and make a .pdf report about the review process and your suggestions. 
+ 
+II. Report 
+- 
+Submit your report in .pdf file and .xlsx file. 
+- 
+For each found fault/error/mistake, a fix suggestion is required. 
+- 
+When you are a team, you need a sheet of member contribution right after the cover 
+page of the report. 
+ 
+III. Marking schema 
+ 
+Max 
+point 
+Rubric 
+ 
+Source file review 
+8.0 
+Mistakes discovering: 0.0 - 6.0 
+Fixing suggestion: 0.0 - 2.0 
+Report 
+1 
+Good explaination: 1.0 
+Bad format: -0.5 
+Teamwork 
+1 
+Good (workload distribution, 
+team meeting, …): 1.0 
+Fair: 0.5 
+ 
+ 
+10 
+ 
+ 
+ 
+ 
+ 

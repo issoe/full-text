@@ -1,0 +1,33 @@
+Software Testing – 2023S1 
+Project 
+1 
+Project description 
+Part#2: Black-box testing 
+Campaign 
+ 
+I. Description 
+Test the following applications 
+https://www.calculator.net/ 
+ 
+Make sure that: 
+- at least 02 functional requirement (as use-cases) that have at least two alternative or 
+exception flows have been tested 
+- boundary value analysis, equivalent class partitioning, decision table and use-case testing 
+methods have to be used 
+- and at least one non-functional requirement has been tested. 
+ 
+ 
+II. Report 
+- 
+Report file type: .pdf. 
+- 
+The application of (black-box testing) methods to generate the test-case set. 
+- 
+Test-case description (at least): purpose, pre-condition (if any), data (can be re-used), 
+exection procedure/flow-of-step, expected results (may be presented for each step). 
+- 
+The execution results and comments/analysis description and PASSED/FAILED 
+confirmation for each test-case. 
+- 
+For each FAILED, the step flow to re-produce the fault should be provided if it is very 
+difficult to be concluded from the testing procedure and data. 

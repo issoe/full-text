@@ -1,0 +1,66 @@
+CREATE TABLE files (
+	ids SERIAL PRIMARY KEY,
+	id_drive VARCHAR(50),
+	filename VARCHAR(500),
+	is_deleted BOOLEAN,
+	upload_id_firebase VARCHAR(255),
+	upload_mail VARCHAR(255),
+	intro VARCHAR(500),
+	title VARCHAR(255),
+	create_on DATE
+);
+
+
+INSERT INTO files (id_drive, filename, is_deleted, upload_id_firebase, upload_mail, intro, title, create_on)
+VALUES 
+('1EcPbE6k1hiwmznYXN4nxScIoKZzjBOTV', 'C-3e20110915.pdf', FALSE, 'aHcNrF9b3t5iRoqKXZP', 'khanhpq@gmail.com', 'Introduction for searching app', 'Searching app 001', '2022-11-23'),
+('1RTQkxe4Vjvg8lcN2fC-u52H6lV7z4FMd', 'NFT_MarketPlace_refer.pdf', FALSE, '7JsLnO8v2xd4yBzWQY6', 'khanhpq@gmail.com', 'Introduction for searching app', 'Searching app 002', '2022-11-23'),
+('1DRTdPDtMBMxEKYFs714vne6COLZ3H_6o', 'Final internship presentation_edited.pdf', FALSE, 'rTpUxV5g4dCzE7F1oMn', 'khanhpq@gmail.com', 'Introduction for searching app', 'Searching app 003', '2022-11-23'),
+('1hws680ecNWwXww8lTVWBcLOUzVJM4L3w', 'ans_tut2.pdf', FALSE, 'ZsIwH2J6yNtRbVXmG9q', 'khanhpq@gmail.com', 'Introduction for searching app', 'Searching app 004', '2022-11-23'),
+('1N-FUZmjHQy1mIyWZWv62nL9Pe0dAURfd', '05_AST.pdf', FALSE, 'LfDcKpV1r5wEjXsN4Qo', 'khanhpq@gmail.com', 'Introduction for searching app', 'Searching app 005', '2022-11-23'),
+('1BDfdqfsF8IIaAxiYLFGTdY9uVNM25MRi', '01_Lexical.pdf', FALSE, 'W8RdGvP3zNcQyO5tKs', 'khanhpq@gmail.com', 'Introduction for searching app', 'Searching app 006', '2022-11-23'),
+('150as685iVvAB_aL6OIbYUB1d-Fiw1wXa', 'De_thi_GK_PPL_HK221.pdf', FALSE, 'eVtZjD7XpHwIqY2G3f', 'khanhpq@gmail.com', 'Introduction for searching app', 'Searching app 007', '2022-11-23'),
+('1MM-9WQEA41L9FZCopgh5Zmxz9BMncNta', '108.pdf', FALSE, 'M1zYvD6jGhXcBp7NwR', 'khanhpq@gmail.com', 'Introduction for searching app', 'Searching app 008', '2022-11-23'),
+('1EjT7i6_zE1lNyU0rUzl_3muOSKKBMWLi', 'Complete IELTS Band 4-5 WB.pdf', FALSE, 'iR8yB2o3JtEhVpW7cQ', 'khanhpq@gmail.com', 'Introduction for searching app', 'Searching app 009', '2022-11-23'),
+('1jwKFkVzQI7MJSS67Pm-qn8YOVKDTflGQ', 'ans_tut4_oop.pdf', FALSE, '5oKlP7sV6Xh3YtNcWm', 'khanhpq@gmail.com', 'Introduction for searching app', 'Searching app 010', '2022-11-23'),
+('1sphq_L2HDCqAz-j1pZ110syCAtljQuML', '19120649-19120670.pdf', FALSE, '5oKlP7sV6Xh3YtNcWm', 'khanhpq@gmail.com', 'Introduction for searching app', 'Searching app 010', '2022-11-23'),
+('1fRxXXG3CNK578Otbw8AoZeZnDrvK12_s', 'ASE_Chap2.pdf', FALSE, '5oKlP7sV6Xh3YtNcWm', 'khanhpq@gmail.com', 'Introduction for searching app', 'Searching app 010', '2022-11-23'),
+('0fQzq7bg1S2ljS4c6g38CfwEpxOAtAu1', 'ASE_Chap1.pdf', FALSE, '5oKlP7sV6Xh3YtNcWm', 'khanhpq@gmail.com', 'Introduction for searching app', 'Searching app 010', '2022-11-23');
+
+
+CREATE TABLE history (
+	ids SERIAL PRIMARY KEY,
+	keyword VARCHAR(50),
+	user_id VARCHAR(500),
+	vote INTEGER
+);
+
+
+INSERT INTO history (keyword, user_id, vote) VALUES 
+('data', 'khanhpq@gmail.com', 1),
+('document', 'khanhpq@gmail.com', 1),
+('machine learning', 'khanhpq@gmail.com', 1),
+('economy', 'khanhpq@gmail.com', 0),
+('business', 'khanhpq@gmail.com', 1),
+('how to create book', 'khanhpq@gmail.com', 0),
+('book', 'khanhpq@gmail.com', 1),
+('reading book', 'khanhpq@gmail.com', 1),
+('songoku anime', 'khanhpq@gmail.com', -1),
+('computer science', 'khanhpq@gmail.com', 1),
+('security information', 'khanhpq@gmail.com', 0),
+('hacker', 'khanhpq@gmail.com', 1),
+('fibonacy', 'tan@gmail.com', 1),
+('finance', 'tan@gmail.com', 0),
+('bitcoin', 'tan@gmail.com', 1),
+('blockchain', 'tan@gmail.com', 1),
+('Java language', 'tan@gmail.com', -1),
+('facebook lite', 'tan@gmail.com', 1),
+('Instagram-dennphilong177', 'tan@gmail.com', 1),
+('business', 'tan@gmail.com', 0),
+('business', 'tan@gmail.com', 1),
+('economy', 'tan@gmail.com', 1),
+('data', 'tan@gmail.com', 1),
+('data', 'ngoctan@gmail.com', 1),
+('data', 'ngoctan@gmail.com', 1),
+('data', 'ngoctan@gmail.com', 1);
+
